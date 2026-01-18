@@ -87,7 +87,7 @@ def ucs(graph, start, goal):
     pq.put((0, [start]))  
     visited = set()           
 
-    while not pq.empty():
+    while pq:
         cost, path = pq.get()   
         node = path[-1]         
 
@@ -96,7 +96,6 @@ def ucs(graph, start, goal):
         if node not in visited:
             visited.add(node)
             for neighbor, weight in graph[node].items():
-                if neighbor not in visited:
                     new_path = list(path)
                     new_path.append(neighbor)
                     pq.put((cost + weight, new_path))  
