@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 GitHub Discussions
+    url: https://github.com/H0NEYP0T-466/AiLab-workbench/discussions
+    about: Ask questions, share ideas, and engage with the community
+  - name: 🛡️ Security Vulnerability Report
+    url: https://github.com/H0NEYP0T-466/AiLab-workbench/security
+    about: Report security vulnerabilities privately through GitHub Security
+  - name: 📚 Documentation & Help
+    url: https://github.com/H0NEYP0T-466/AiLab-workbench/blob/main/README.md
+    about: Read the documentation for usage instructions and examples

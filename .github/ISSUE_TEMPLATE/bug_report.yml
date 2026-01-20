@@ -1,0 +1,124 @@
+name: Bug report
+description: Report a reproducible problem
+labels: ["bug"]
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to report a bug! Please fill out the information below to help us resolve the issue.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Bug Summary
+      description: A clear and concise description of what the bug is.
+      placeholder: "Example: The BFS algorithm returns incorrect path when graph has cycles"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: Detailed steps to reproduce the behavior
+      placeholder: |
+        1. Run '...'
+        2. Enter input '...'
+        3. Execute function '...'
+        4. See error
+      value: |
+        1. 
+        2. 
+        3. 
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+      description: What you expected to happen
+      placeholder: "The algorithm should return the shortest path..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: Actual Behavior
+      description: What actually happened
+      placeholder: "Instead, it returns an incorrect path or throws an error..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Information about your environment
+      placeholder: |
+        - OS: [e.g., Windows 11, macOS 13, Ubuntu 22.04]
+        - Python Version: [e.g., 3.9.7]
+        - NumPy Version: [e.g., 1.23.0]
+        - Pandas Version: [e.g., 1.4.3]
+        - Matplotlib Version: [e.g., 3.5.2]
+      value: |
+        - OS: 
+        - Python Version: 
+        - NumPy Version: 
+        - Pandas Version: 
+        - Matplotlib Version: 
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error Logs
+      description: Paste any relevant error messages, logs, or stack traces
+      render: shell
+      placeholder: |
+        Traceback (most recent call last):
+          File "lab.py", line 42, in <module>
+            result = function_name()
+        TypeError: ...
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots to help explain your problem
+      placeholder: Drag and drop images here or paste image URLs
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      description: How severe is this bug?
+      options:
+        - Critical (blocks usage)
+        - High (major functionality impacted)
+        - Medium (workaround available)
+        - Low (minor issue)
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Add any other context about the problem here
+      placeholder: "This issue started happening after... / This might be related to..."
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Pre-submission Checklist
+      options:
+        - label: I have searched existing issues to avoid duplicates
+          required: true
+        - label: I have provided all requested information
+          required: true
+        - label: I can reproduce this bug consistently
+          required: false
