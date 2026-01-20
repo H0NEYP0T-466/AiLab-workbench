@@ -68,7 +68,7 @@
 
 Before you begin, ensure you have the following installed:
 
-- **Python 3.8+** - [Download Python](https://www.python.org/downloads/)
+- **Python 3.7+** - [Download Python](https://www.python.org/downloads/)
 - **pip** - Python package installer (usually comes with Python)
 
 ### Setup Steps
