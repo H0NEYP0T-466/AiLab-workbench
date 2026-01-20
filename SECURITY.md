@@ -140,6 +140,6 @@ For non-security issues, please use:
 
 ---
 
-**Last Updated**: January 2026
+**Last Updated**: January 2024
 
 Thank you for helping keep AiLab-workbench and its users safe! 🛡️
