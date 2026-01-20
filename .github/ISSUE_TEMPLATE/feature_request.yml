@@ -1,0 +1,112 @@
+name: Feature request
+description: Propose an enhancement or new feature
+labels: ["enhancement"]
+title: "[Feature]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for suggesting a feature! Please provide as much detail as possible to help us understand your proposal.
+
+  - type: textarea
+    id: problem-statement
+    attributes:
+      label: Problem Statement
+      description: Is your feature request related to a problem? Please describe.
+      placeholder: "I'm frustrated when... / It would be helpful if..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: Proposed Solution
+      description: Describe the solution you'd like
+      placeholder: "Add a new function that... / Modify the existing behavior to..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Describe any alternative solutions or features you've considered
+      placeholder: "I considered using... / Another approach could be..."
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope and Impact
+      description: What parts of the project would this affect?
+      placeholder: |
+        - Files to modify: [e.g., lab6.py, lab7.py]
+        - New dependencies: [e.g., networkx]
+        - Breaking changes: [Yes/No]
+        - Users affected: [e.g., all users, advanced users only]
+      value: |
+        - Files to modify: 
+        - New dependencies: 
+        - Breaking changes: 
+        - Users affected: 
+
+  - type: textarea
+    id: use-cases
+    attributes:
+      label: Use Cases
+      description: Provide specific examples of how this feature would be used
+      placeholder: |
+        1. A student could use this to...
+        2. This would help when...
+        3. Example workflow: ...
+
+  - type: textarea
+    id: implementation-ideas
+    attributes:
+      label: Implementation Ideas
+      description: If you have ideas about how to implement this, share them here
+      placeholder: "This could be implemented by... / Pseudocode: ..."
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this feature to you?
+      options:
+        - Critical (project unusable without it)
+        - High (significant improvement)
+        - Medium (nice to have)
+        - Low (minor enhancement)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: willingness
+    attributes:
+      label: Willingness to Contribute
+      description: Are you willing to work on this feature?
+      options:
+        - "Yes, I can submit a PR"
+        - "Yes, with guidance"
+        - "No, but I can help test"
+        - "No, suggestion only"
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Add any other context, mockups, or screenshots about the feature
+      placeholder: "Related resources: ... / Similar features in other projects: ..."
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Pre-submission Checklist
+      options:
+        - label: I have searched existing issues and PRs to avoid duplicates
+          required: true
+        - label: This feature aligns with the project's educational goals
+          required: true
+        - label: I have provided sufficient detail for evaluation
+          required: true
